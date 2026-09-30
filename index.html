@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orgreen | Fabricante de Joyería para Minoristas</title>
+  <meta name="description"
+    content="Diseñamos y fabricamos joyería de alta calidad para minoristas que buscan diferenciarse. Soluciones a medida, colecciones propias y atención B2B.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/cropped-logo-png-32x32.png">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       HEADER / NAVBAR FLOTANTE GLASSMORPHISM
+       ========================================================================= -->
+  <header class="header-wrapper">
+    <nav class="navbar-glass" id="navbar">
+      <a href="#" class="brand-logo"><img class="brand-logo-img" src="assets/cropped-logo-png-32x32.png"
+          alt="Orgreen"><span>Orgreen</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#colecciones" class="nav-link">COLECCIONES</a></li>
+        <li><a href="#servicios" class="nav-link">SERVICIOS</a></li>
+        <li><a href="#proceso" class="nav-link">EL PROCESO</a></li>
+        <li><a href="#contacto" class="nav-link">CONTACTO</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-pill btn-pill-glow open-modal-btn">
+          Solicitar catálogo
+        </button>
+
+        <button class="nav-icon-btn" id="mobileMenuToggleBtn" aria-label="Abrir menú" title="Menú" aria-expanded="false"
+          aria-controls="mobileMenuDrawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       DRAWER / MENÚ MÓVIL GLASSMORPHISM (TABLETS Y MÓVILES)
+       ========================================================================= -->
+  <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+  <aside class="mobile-menu-drawer" id="mobileMenuDrawer" aria-label="Menú principal de navegación" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <a href="#" class="brand-logo mobile-brand-logo">
+        <img class="brand-logo-img" src="assets/cropped-logo-png-32x32.png" alt="Orgreen">
+        <span>Orgreen</span>
+      </a>
+      <button class="mobile-menu-close-btn" id="mobileMenuCloseBtn" aria-label="Cerrar menú" title="Cerrar menú">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu-body">
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-links">
+          <li>
+            <a href="#colecciones" class="mobile-nav-link">
+              <span>Colecciones</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#servicios" class="mobile-nav-link">
+              <span>Servicios</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#proceso" class="mobile-nav-link">
+              <span>El Proceso</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#contacto" class="mobile-nav-link">
+              <span>Contacto</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu-actions">
+        <button class="btn-pill btn-pill-glow open-modal-btn mobile-cta-btn">
+          Solicitar catálogo
+        </button>
+      </div>
+
+      <div class="mobile-menu-footer">
+        <span class="overline">Fabricante de joyería</span>
+        <p class="mobile-footer-text">Soluciones de alta joyería para minoristas exigentes.</p>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =======================================================================
+         HERO SECTION (FULL WIDTH CON IMAGEN DE FONDO)
+         ======================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="overline">Fabricante de joyería</span>
+          <h1 class="hero-title">Tu socio en<br>cada colección</h1>
+          <div class="hero-mobile-spacer" aria-hidden="true"></div>
+          <p class="hero-subtitle">
+            Diseñamos y fabricamos joyería de alta calidad para minoristas que buscan diferenciarse.
+          </p>
+          <a href="#servicios" class="btn-pill btn-pill-hero">
+            Conoce nuestros servicios <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECCIÓN: COLECCIONES (CAROUSEL)
+         ======================================================================= -->
+    <section class="collections-section" id="colecciones">
+      <div class="container">
+        <!-- Header bicolumna -->
+        <div class="collections-header">
+          <div class="collections-header-left">
+            <span class="overline">Nuestras Colecciones</span>
+            <h2 class="collections-title">Un adelanto de lo que<br>puedes encontrar</h2>
+          </div>
+          <div class="collections-header-right">
+            <p class="collections-lead">
+              Te presentamos una selección de piezas de nuestras colecciones más destacadas. Para descubrir la gama
+              completa,
+              solicita nuestro catálogo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Carousel wrapper -->
+        <div class="collections-carousel-wrapper">
+          <button class="carousel-nav-btn carousel-prev" id="collPrev" aria-label="Anterior">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="collections-track-container">
+            <div class="collections-track" id="collectionsTrack">
+
+              <!-- Card 1: Colección Clásica -->
+              <div class="collection-card">
+                <div class="collection-card-img">
+                  <img src="assets/collection-clasica.jpg"
+                    alt="Colección Clásica - anillo solitario de diamante en oro">
+                </div>
+                <div class="collection-card-body">
+                  <div class="collection-card-info">
+                    <h3 class="collection-name">Colección<br>Clásica</h3>
+                    <p class="collection-desc">Solitarios en oro y diamante certificado. La línea de mayor rotación,
+                      pensada como producto de entrada de catálogo.</p>
+                  </div>
+                  <button class="collection-cta open-modal-btn" aria-label="Ver Colección Clásica">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Card 2: Colección Luz -->
+              <div class="collection-card collection-card--featured">
+                <div class="collection-card-img">
+                  <img src="assets/collection-luz.jpg" alt="Colección Luz - colgante lágrima de diamante en oro">
+                </div>
+                <div class="collection-card-body">
+                  <div class="collection-card-info">
+                    <h3 class="collection-name">Colección<br>Luz</h3>
+                    <p class="collection-desc">Piezas de línea media-alta de oro con piedras naturales. Diferenciación
+                      frente a catálogos genéricos.</p>
+                  </div>
+                  <button class="collection-cta open-modal-btn" aria-label="Ver Colección Luz">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Card 3: Colección Contemporánea -->
+              <div class="collection-card">
+                <div class="collection-card-img">
+                  <img src="assets/collection-contemporanea.jpg"
+                    alt="Colección Contemporánea - pendientes aro con pavé de diamantes">
+                </div>
+                <div class="collection-card-body">
+                  <div class="collection-card-info">
+                    <h3 class="collection-name">Colección<br>Contemporánea</h3>
+                    <p class="collection-desc">Diseño actual para la clienta joven. Rotación rápida, precio accesible
+                      sin renunciar a oro y piedra natural.</p>
+                  </div>
+                  <button class="collection-cta open-modal-btn" aria-label="Ver Colección Contemporánea">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Card 4: Colección Esencial -->
+              <div class="collection-card">
+                <div class="collection-card-img">
+                  <img src="assets/collection-esencial.jpg"
+                    alt="Colección Esencial - pulsera tennis de diamantes en oro">
+                </div>
+                <div class="collection-card-body">
+                  <div class="collection-card-info">
+                    <h3 class="collection-name">Colección<br>Esencial</h3>
+                    <p class="collection-desc">Lo imprescindible, con clase y distinción.</p>
+                  </div>
+                  <button class="collection-cta open-modal-btn" aria-label="Ver Colección Esencial">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+
+              <!-- Card 5: Colección Natura -->
+              <div class="collection-card">
+                <div class="collection-card-img">
+                  <img src="assets/collection-natura.jpg"
+                    alt="Colección Natura - joyería de inspiración orgánica en oro">
+                </div>
+                <div class="collection-card-body">
+                  <div class="collection-card-info">
+                    <h3 class="collection-name">Colección<br>Natura</h3>
+                    <p class="collection-desc">Formas orgánicas inspiradas en la naturaleza.</p>
+                  </div>
+                  <button class="collection-cta open-modal-btn" aria-label="Ver Colección Natura">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div><!-- /collections-track -->
+          </div><!-- /collections-track-container -->
+
+          <button class="carousel-nav-btn carousel-next" id="collNext" aria-label="Siguiente">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div><!-- /collections-carousel-wrapper -->
+
+        <!-- Dots indicadores -->
+        <div class="collections-dots" id="collectionsDots">
+          <button class="coll-dot" data-index="0" aria-label="Ir a la colección 1"></button>
+          <button class="coll-dot active" data-index="1" aria-label="Ir a la colección 2"></button>
+          <button class="coll-dot" data-index="2" aria-label="Ir a la colección 3"></button>
+          <button class="coll-dot" data-index="3" aria-label="Ir a la colección 4"></button>
+          <button class="coll-dot" data-index="4" aria-label="Ir a la colección 5"></button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECCIÓN: POR QUÉ ELEGIRNOS
+         ======================================================================= -->
+    <section class="services-section" id="servicios">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <span class="overline">Nuestros servicios</span>
+            <h2 class="section-title">Soluciones a medida para tu negocio</h2>
+          </div>
+          <div>
+            <p class="section-lead">
+              Ofrecemos un servicio integral para que puedas contar con joyería de calidad, con la flexibilidad, plazos
+              y soporte que necesitas.
+            </p>
+          </div>
+        </div>
+
+        <div class="services-grid-5">
+          <!-- Card 1 -->
+          <div class="service-card open-modal-btn" role="button" tabindex="0">
+            <div class="service-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="6 3 18 3 22 9 12 22 2 9"></polygon>
+                <line x1="12" y1="22" x2="18" y2="9"></line>
+                <line x1="12" y1="22" x2="6" y2="9"></line>
+                <line x1="2" y1="9" x2="22" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Fabricación personalizada</h3>
+            <p class="service-desc">Fabricamos tu colección bajo tu marca o la nuestra, y piezas de encargo con
+              presupuesto y render 3D antes de producir.</p>
+            <span class="service-arrow">&rarr;</span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card open-modal-btn" role="button" tabindex="0">
+            <div class="service-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="12" r="6"></circle>
+                <circle cx="15" cy="12" r="6"></circle>
+              </svg>
+            </div>
+            <h3 class="service-title">Colecciones propias</h3>
+            <p class="service-desc">Líneas actuales y atemporales, renovadas cada temporada y listas para incorporar
+              directamente a tu catálogo.</p>
+            <span class="service-arrow">&rarr;</span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card open-modal-btn" role="button" tabindex="0">
+            <div class="service-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Certificación y contraste</h3>
+            <p class="service-desc">Diamantes naturales certificados GIA/IGI desde 0,50 ct y oro de ley garantizado
+              según los estándares internacionales.</p>
+            <span class="service-arrow">&rarr;</span>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service-card open-modal-btn" role="button" tabindex="0">
+            <div class="service-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Plazos garantizados</h3>
+            <p class="service-desc">Tiempos de producción optimizados y gestión fluida de reposiciones para mantener
+              siempre activo tu escaparate.</p>
+            <span class="service-arrow">&rarr;</span>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="service-card open-modal-btn" role="button" tabindex="0">
+            <div class="service-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3 class="service-title">Atención personalizada</h3>
+            <p class="service-desc">Un equipo dedicado te acompaña desde la primera consulta hasta la entrega de cada
+              pedido.</p>
+            <span class="service-arrow">&rarr;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECCIÓN: SERVICIOS ESPECIALES
+         ======================================================================= -->
+    <section class="special-services-section" id="servicios-especiales">
+      <div class="container">
+        <!-- Header -->
+        <div class="section-header-flex">
+          <div>
+            <h2 class="section-title">Dale más valor a </br> tus gemas y diamantes</h2>
+          </div>
+          <div>
+            <p class="section-lead">
+              Ofrecemos un servicio integral de puesta en valor y comercialización para tus gemas de alta calidad.
+              Asimismo, facilitamos el suministro de diamantes sueltos certificados bajo demanda.
+            </p>
+          </div>
+        </div>
+
+        <!-- Grid de 2 tarjetas destacadas -->
+        <div class="special-cards-grid">
+          <!-- Tarjeta 1: Monturas Propias -->
+          <article class="special-card">
+            <div class="special-card-img-wrap">
+              <img src="assets/special-service-monturas.jpg"
+                alt="Monturas propias - Anillo solitario en oro con diamantes y gemas preciosas" loading="lazy">
+            </div>
+            <div class="special-card-content">
+              <span class="overline">Monturas Propias</span>
+              <h3 class="special-card-title">Convierte tu stock de gemas en piezas terminadas</h3>
+              <p class="special-card-desc">
+                Rentabiliza las gemas estancadas. Nosotros ponemos las monturas de nuestras colecciones, el engaste y la
+                terminación para que salgan directas a tu escaparate.
+              </p>
+              <button class="btn-pill btn-pill-special open-modal-btn">
+                Descubrir monturas <span>&rarr;</span>
+              </button>
+              <ul class="special-checklist">
+                <li class="special-check-item">
+                  <span class="special-check-icon" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span>Diseños actuales y atemporales</span>
+                </li>
+                <li class="special-check-item">
+                  <span class="special-check-icon" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span>Monturas adaptadas</span>
+                </li>
+                <li class="special-check-item">
+                  <span class="special-check-icon" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span>Flexibilidad en pedidos</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tarjeta 2: Diamantes Certificados -->
+          <article class="special-card">
+            <div class="special-card-img-wrap">
+              <img src="assets/special-service-diamantes.jpg"
+                alt="Diamantes certificados - Pinzas con diamante y certificado oficial GIA" loading="lazy">
+            </div>
+            <div class="special-card-content">
+              <span class="overline">Diamantes Certificados</span>
+              <h3 class="special-card-title">Diamantes certificados a demanda</h3>
+              <p class="special-card-desc">
+                Si tu cliente busca unas especificaciones concretas, te proporcionamos diamantes certificados con las
+                medidas, forma y calidad exactas que necesites.
+              </p>
+              <button class="btn-pill btn-pill-special open-modal-btn">
+                Solicitar diamantes <span>&rarr;</span>
+              </button>
+              <ul class="special-checklist">
+                <li class="special-check-item">
+                  <span class="special-check-icon" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span>Certificación internacional (GIA, IGI, etc.)</span>
+                </li>
+                <li class="special-check-item">
+                  <span class="special-check-icon" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span>Diferentes formas y tamaños</span>
+                </li>
+                <li class="special-check-item">
+                  <span class="special-check-icon" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span>Asesoramiento personalizado</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECCIÓN: EL PROCESO
+         ======================================================================= -->
+    <section class="process-section" id="proceso">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <span class="overline">El proceso</span>
+            <h2 class="section-title">De la idea a tu tienda</h2>
+          </div>
+          <div>
+            <p class="section-lead">
+              Trabajamos contigo en todo el proceso, desde el diseño hasta la entrega, con la máxima precisión y
+              cuidado.
+            </p>
+          </div>
+        </div>
+        <div class="process-grid">
+          <!-- Izquierda: foto de taller -->
+          <div class="process-img-left">
+            <img src="assets/process-artisan.jpg" alt="Artesano joyero seleccionando diamantes sobre boceto de diseño">
+          </div>
+
+          <!-- Centro: textos y pasos -->
+          <div class="process-info">
+            <div class="process-steps-list">
+              <div class="process-step-item">
+                <span class="step-num">01</span>
+                <span class="step-text">Idea</span>
+              </div>
+              <div class="process-step-item">
+                <span class="step-num">02</span>
+                <span class="step-text">Viabilidad</span>
+              </div>
+              <div class="process-step-item">
+                <span class="step-num">03</span>
+                <span class="step-text">Prototipado 3D (CAD)</span>
+              </div>
+              <div class="process-step-item">
+                <span class="step-num">04</span>
+                <span class="step-text">Fabricación</span>
+              </div>
+              <div class="process-step-item">
+                <span class="step-num">05</span>
+                <span class="step-text">Control de calidad</span>
+              </div>
+              <div class="process-step-item">
+                <span class="step-num">06</span>
+                <span class="step-text">Entrega</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="process-aftercare-section">
+      <div class="container">
+        <div class="process-after-grid">
+          <div class="process-after-col">
+            <p class="process-after-phrase">Después de la venta, seguimos ahí.</p>
+            <div class="process-after-icons">
+              <div class="process-after-icon-item">
+                <div class="aftercare-icon-wrap">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                    </path>
+                  </svg>
+                </div>
+                <span class="aftercare-text">Reparación</span>
+              </div>
+              <div class="process-after-icon-item">
+                <div class="aftercare-icon-wrap">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20M2 12h20"></path>
+                    <circle cx="12" cy="12" r="9"></circle>
+                  </svg>
+                </div>
+                <span class="aftercare-text">Ajuste de talla</span>
+              </div>
+              <div class="process-after-icon-item">
+                <div class="aftercare-icon-wrap">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                </div>
+                <span class="aftercare-text">Mantenimiento</span>
+              </div>
+            </div>
+            <p class="process-after-phrase process-after-phrase--muted">Reparamos, ajustamos y mantenemos tus piezas.
+              Siempre preparadas para tu venta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECCIÓN: POR QUÉ ELEGIRNOS
+         ======================================================================= -->
+    <section class="why-us-section" id="contacto">
+      <div class="container">
+        <div class="why-us-layout">
+          <div>
+            <span class="overline">Por qué elegirnos</span>
+            <h2 class="why-us-title">Más que un proveedor, un aliado estratégico</h2>
+            <p class="why-us-lead">
+              Nuestra experiencia, calidad y compromiso nos convierten en el socio ideal para hacer crecer tu negocio.
+            </p>
+
+          </div>
+
+          <div class="why-us-features-grid">
+            <div class="why-feature">
+              <div class="feature-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2 2 12 12 22 22 12Z"></path>
+                  <path d="M12 2 12 12"></path>
+                  <path d="M2 12 12 12"></path>
+                </svg>
+              </div>
+              <h4 class="feature-title">Calidad garantizada</h4>
+              <p class="feature-desc">Piezas duraderas y acabados impecables.</p>
+            </div>
+
+            <div class="why-feature">
+              <div class="feature-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
+                  <path d="M21 3v5h-5"></path>
+                </svg>
+              </div>
+              <h4 class="feature-title">Flexibilidad</h4>
+              <p class="feature-desc">Nos adaptamos a tus necesidades. Cada tienda es única.</p>
+            </div>
+
+            <div class="why-feature">
+              <div class="feature-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                  <path d="M4 22h16"></path>
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                </svg>
+              </div>
+              <h4 class="feature-title">Experiencia</h4>
+              <p class="feature-desc">Más de 50 años en el sector de la joyería.</p>
+            </div>
+
+            <div class="why-feature">
+              <div class="feature-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z">
+                  </path>
+                  <path d="m3.3 7 8.7 5 8.7-5"></path>
+                  <path d="M12 22V12"></path>
+                </svg>
+              </div>
+              <h4 class="feature-title">Envío asegurado</h4>
+              <p class="feature-desc">Mercancía asegurada hasta destino en cada envío, sin excepciones.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-glass-card">
+          <div>
+            <span class="overline">Empecemos</span>
+            <h2 class="cta-title">Hablemos de tu próxima colección</h2>
+            <p class="cta-subtitle">Solicita nuestro catálogo y descubre todo lo que podemos ofrecerte.</p>
+          </div>
+          <div>
+            <button class="btn-pill btn-pill-glow open-modal-btn">
+              Solicitar catálogo <span>&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER INSTITUCIONAL
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <!-- Fila principal -->
+      <div class="footer-inner">
+
+        <!-- Col 1: Marca -->
+        <div class="footer-col">
+          <div class="footer-brand"><img class="footer-brand-img" src="assets/cropped-logo-png-32x32.png"
+              alt="Orgreen"><span>Orgreen</span></div>
+          <div class="footer-tagline">Fabricante de joyería para minoristas</div>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-link" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                </path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navegación -->
+        <div class="footer-col">
+          <p class="footer-col-heading">Navegación</p>
+          <ul class="footer-links">
+            <li><a href="#colecciones" class="footer-link">Colecciones</a></li>
+            <li><a href="#servicios" class="footer-link">Servicios</a></li>
+            <li><a href="#proceso" class="footer-link">El proceso</a></li>
+            <li><a href="#por-que-nosotros" class="footer-link">Por qué nosotros</a></li>
+            <li><a href="#contacto" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Datos de la empresa -->
+        <div class="footer-col">
+          <p class="footer-col-heading">Empresa</p>
+          <address class="footer-address">
+            <p class="footer-company-name">Orgreen Design Jewelry, SL.</p>
+            <p>Calle Platino #8</p>
+            <p>(Polg. El Granadal)</p>
+            <p>14014 · Córdoba · España</p>
+          </address>
+          <a class="btn-pill footer-map-btn" target="_blank" rel="noopener noreferrer"
+            href="https://www.google.com/maps/search/?api=1&query=Orgreen+Design+Jewelry+SL,+Calle+Platino+8,+14014+Cordoba,+Espana"
+            onclick="if(/iPad|iPhone|iPod/.test(navigator.userAgent)){this.href='http://maps.apple.com/?q=Orgreen+Design+Jewelry+SL,+Calle+Platino+8,+14014+Cordoba,+Espana';}">Ver
+            ubicación</a>
+        </div>
+
+        <!-- Col 4: Contacto -->
+        <div class="footer-col">
+          <p class="footer-col-heading">Contacto</p>
+          <ul class="footer-contact-list">
+            <li>
+              <a href="tel:+34957449040" class="footer-contact-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.36 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+                +34 957 44 90 40
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/34957449040" target="_blank" rel="noopener noreferrer"
+                class="footer-contact-link footer-contact-link--wa">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                  </path>
+                </svg>
+                WhatsApp
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-inner -->
+
+      <!-- Barra legal inferior -->
+      <div class="footer-legal">
+        <p class="footer-copy">&copy; <span id="footerYear"></span> Orgreen Design Jewelry, SL. Todos los derechos
+          reservados.</p>
+        <ul class="footer-legal-links">
+          <li><a href="#" class="footer-legal-link">Política de privacidad de datos</a></li>
+          <li><a href="#" class="footer-legal-link">Derechos de imagen y marca</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODAL B2B - SOLICITUD DE CATÁLOGO MAYORISTA
+       ========================================================================= -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Cerrar modal">&times;</button>
+
+      <span class="overline">Exclusivo Para Profesionales</span>
+      <h3 class="modal-title">Solicitud de Catálogo</h3>
+      <p class="modal-lead">Accede a nuestras condiciones de fábrica, tarifas para minoristas y dossier técnico de
+        fabricación.</p>
+
+      <form id="b2bForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="companyName">Nombre de Joyería / Empresa *</label>
+            <input class="form-input" type="text" id="companyName" required placeholder="Ej. Joyería Montealegre">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cifNif">CIF / NIF Profesional *</label>
+            <input class="form-input" type="text" id="cifNif" required placeholder="B-12345678">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactPerson">Persona de Contacto *</label>
+            <input class="form-input" type="text" id="contactPerson" required placeholder="Nombre y Apellidos">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="businessEmail">Email Profesional *</label>
+            <input class="form-input" type="email" id="businessEmail" required placeholder="compras@joyeria.com">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="businessPhone">Teléfono de Contacto *</label>
+            <input class="form-input" type="tel" id="businessPhone" required placeholder="+34 600 000 000">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="businessType">Tipo de Negocio</label>
+            <select class="form-select" id="businessType">
+              <option value="joyeria-fisica">Joyería / Boutique física</option>
+              <option value="cadena-tiendas">Cadena de joyerías</option>
+              <option value="marca-propia">Marca propia / Diseñador</option>
+              <option value="ecommerce">E-commerce de joyería</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label class="form-label" for="notes">Interés principal o volumen estimado</label>
+            <textarea class="form-textarea" id="notes"
+              placeholder="Ej. Fabricación bajo marca blanca, reposición de colecciones propias, presupuestos CAD..."></textarea>
+          </div>
+        </div>
+
+        <p class="form-disclaimer">
+          🔒 Tus datos se tratan conforme a nuestra política de privacidad y solo se usan para gestionar tu solicitud
+          como profesional del sector. No se comparten con terceros.
+        </p>
+
+        <button type="submit" class="btn-pill btn-pill-glow" style="width: 100%;">
+          Solicitar <span>&rarr;</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast de confirmación -->
+  <div class="toast-msg" id="toastMsg">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DFC9B4" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span>¡Solicitud recibida! Nuestro equipo comercial B2B contactará en menos de 24h.</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
